@@ -1,0 +1,5 @@
+resources/
+vector-store/
+app/static/.webassets-cache/
+app/static/gen
+app/lib/__pycache__

@@ -1,0 +1,24 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 4rem;
+    align-items: center;
+}
+
+.chatbox {
+    border: 1px solid black;
+    border-radius: 0.25rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.chat-messages {
+    height: 35rem;
+    border-bottom: 1px solid black;
+}
+
+.input-box {
+    display: flex;
+    justify-content: space-between;
+}

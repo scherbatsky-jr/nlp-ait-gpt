@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIT GPT</title>
+    {% assets "scss_all" %}
+    <link rel="stylesheet" type="text/css" href="{{ ASSET_URL }}">
+    {% endassets %}
+</head>
+<body>
+    <div class="content">
+        <h1>AIT GPT</h1>
+
+        <div class="chatbox">
+            <div class="chat-messages"></div>
+            <form class="input-box" id="data-form" action="/" method="post">
+                <input
+                    id="prompt"
+                    name="prompt"
+                    placeholder="Enter your message"
+                    type="text"
+                />
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
