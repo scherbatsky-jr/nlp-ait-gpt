@@ -72,15 +72,11 @@ class ChatChain:
             verbose=True
         )
 
-        self.query = 'Comparing both of them'
-        self.chat_history = "Human:What is Machine Learning\nAI:\nHuman:What is Deep Learning\nAI:"
-
-        self.question_generator({'chat_history' : self.chat_history, "question" : self.query})
 
         self.doc_chain = load_qa_chain(
             llm=self.llm,
             chain_type='stuff',
-            prompt=CONDENSE_QUESTION_PROMPT,
+            prompt=self.PROMPT,
             verbose=True
         )
 
@@ -101,5 +97,6 @@ class ChatChain:
             get_chat_history=lambda h: h
         )
 
-    def get_chat_chain(self):
-        return self.chain
+    def get_response(self, prompt_question):
+        answer = self.chain({"question":prompt_question})
+        return answer['answer']

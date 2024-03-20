@@ -13,7 +13,17 @@
         <h1>AIT GPT</h1>
 
         <div class="chatbox">
-            <div class="chat-messages"></div>
+            <div class="chat-messages">
+                {% for index, item in chat_history %}
+                    {% for key, value in item.items() %}
+                        {% if key == 'prompt' %}
+                            <div>You: {{ value }}</div>
+                        {% else %}
+                            <div>AI: {{ value }}</div>
+                        {% endif %}
+                    {% endfor %}
+                {% endfor %}
+            </div>
             <form class="input-box" id="data-form" action="/" method="post">
                 <input
                     id="prompt"
