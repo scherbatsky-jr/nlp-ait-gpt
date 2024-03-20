@@ -35,5 +35,6 @@ Run the app.py file to start the server
 The flask server will start at `http://localhost:5000`
 
 ### Demo
+Video has been sped by 15x
 ![External GIF](media/demo.gif)
 
