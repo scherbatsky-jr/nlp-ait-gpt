@@ -19,7 +19,7 @@ root
     |--<a>templates</a>
     |   |--<a href="https://github.com/scherbatsky-jr/nlp-ait-gpt/blob/main/app/templates/index.html">index.html</a>
     |
-    |--<a href="https://github.com/scherbatsky-jr/nlp-ait-gpt/blob/main/app/main.py">app.py</a>
+    |--<a href="https://github.com/scherbatsky-jr/nlp-ait-gpt/blob/main/app/main.py">main.py</a>
 </pre>
 
 ### Running the app
@@ -30,7 +30,7 @@ To run the app, go to the app folder by:
 
 Run the app.py file to start the server
 
-`python3 app.py`
+`python3 main.py`
 
 The flask server will start at `http://localhost:5000`
 
